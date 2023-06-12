@@ -1,0 +1,53 @@
+  @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+       @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-image: url('wallpaperflare.com_wallpaper.jpg');
+            background-size: cover;
+        }
+
+        .poem-container {
+            width: 400px;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.3);
+            backdrop-filter: blur(10px);
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            opacity: 0; /* Initially hidden */
+            animation: fade-in 1s ease-in-out forwards; /* Animation to fade in */
+            font-family: 'Dancing Script', cursive;
+        }
+
+        @keyframes fade-in {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+        .highlight {
+            background-color: yellow;
+        }
+
+        p {
+            font-size: 24px;
+            white-space: nowrap;
+            overflow: hidden;
+        }
+
+        .word-animation {
+            display: inline-block;
+            opacity: 0;
+            animation: word-fade-in 1s forwards;
+        }
+
+        @keyframes word-fade-in {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
